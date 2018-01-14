@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--<link rel="shortcut icon" href="favicon.png" />-->
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
+	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css" />
+	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/jquery.fs.selecter.css" />
+	<!--<link href="libs/multiple-select-master/multiple-select.css" rel="stylesheet"/>-->
+	<link href="libs/select2-master/dist/css/select2.css" rel="stylesheet" />
+	<!--основной файл стилей-->
+	<link rel="stylesheet" href="libs/liMenuVert/css/liMenuVert.css">
+	<!--шаблонный файл стилей-->
+	<link rel="stylesheet" href="libs/liMenuVert/css/liMenuVertTheme-white.css">
+	<link rel="stylesheet" href="libs/jquery.scrollbar-master/jquery.scrollbar.css">
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/media.css" />
+</head>
+<body>
+	<div class="header">
+		<div class="wrapper">
+			<div class="inner_header">
+				<div class="logo">
+					<img src="img/logo.png" alt="Логотип">
+				</div>
+				<i class="fa fa-phone" aria-hidden="true"></i>
+				<input class="nav-burger__checkbox" type="checkbox" id="burger">
+		        <label class="nav-burger" for="burger">Меню</label>
+			    
+		        <nav class="nav">
+		            <a class="nav__item" href="#">Главная</a>
+		            <a class="nav__item" href="#">О нас</a>
+		            <a class="nav__item" href="#">Контакты</a>
+		            <a class="nav__item" href="#">Доставка</a>
+		            <a class="nav__item" href="#">Автосервис</a>
+		            <a class="nav__item" href="#">Каталоги</a>
+		            <a class="nav__item" href="#">Отзывы</a>
+		            <a class="nav__item" href="#">Вход</a>
+		        </nav>
+			</div>				
+		</div>
+	</div>
+	<div class="content">
+		<div class="wrapper">
+			<h2>Поиск запчастей</h2>
+			<ul class="menu clearfix">
+				<li>По параметрам</li>
+				<li>По ОЕМ</li>
+				<li>Текстовый</li>
+			</ul>
+			<form id="searchform" name="searchform" action="/">
+				<p>
+					<label class="content_form_title" for="producer">Производитель</label>
+					<select multiple="multiple" class="js-example-basic-multiple content_selrct_producer" name="states[]" id="producer">
+						<option selected>Все производители</option>
+						<option value="Toyota">Totota</option>
+						<option value="Nissan">Nissan</option>
+						<option value="Honda">Honda</option>
+						<option value="Mazda">Mazda</option>
+						<option value="Subaru">Subaru</option>
+						<option value="Daihatsu">Daihatsu</option>
+						<option value="Suzuki">Suzuki</option>
+						<option value="Isuzu">Isuzu</option>
+						<option value="Chevrolet">Chevrolet</option>
+						<option value="BMW">BMW</option>
+						<option value="Mercedes Benz">Mercedes Benz</option>
+						<option value="Volkswagen">Volkswagen</option>
+						<option value="Volvo">Volvo</option>
+					</select>
+				</p>
+				<p>
+					<label class="content_form_title" for="model">Модель авто</label>
+					<select multiple="multiple" class="js-example-basic-multiple content_selrct_producer" name="states[]" id="model">
+						<option selected>Все модели</option>
+						<option value="Toyota">Atenza</option>
+						<option value="Atenza Sport Wagon">Atenza Sport Wagon</option>
+						<option value="Axela">Axela</option>
+						<option value="Axela Sport">Axela Sport</option>
+						<option value="Bongo">Bongo</option>
+						<option value="Bongo Friendee">Bongo Friendee</option>
+						<option value="Capella">Capella</option>
+						<option value="Capella Wagon">Capella Wagon</option>
+						<option value="CX-7">CX-7</option>
+						<option value="Demio">Demio</option>
+						<option value="Efini MS-9">Efini MS-9</option>
+						<option value="Familia">Familia</option>
+						<option value="Familia S Wagon">Familia S Wagon</option>
+						<option value="Fesiva">Fesiva</option>
+					</select>
+				</p>
+				<p>
+					<label class="content_form_title" for="vin">Модель кузова (шасси, VIN)</label>
+					<select multiple="multiple" class="js-example-basic-multiple content_selrct_producer" name="states[]" id="vin">
+						<option selected>Все модели</option>
+						<option value="BK3P">BK3P</option>
+						<option value="BK5P">BK5P</option>
+						<option value="BKEP">BKEP</option>
+						<option value="BLEFP">BLEFP</option>
+					</select>
+				</p>
+				<p>
+					<label class="content_form_title" for="spare">Выберите запчасть</label>
+					<select multiple="multiple" class="js-example-basic-multiple content_selrct_producer" name="states[]" id="spare">
+						<option selected>Все</option>
+						<option value="Opt">Оптовая продажа</option>
+					</select>
+				</p>
+				<input class="btn" type="submit" value="Искать">
+			</form>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="wrapper">		
+			<h3 class="footer_title">Прямые поставки запчастей<br>с аукционов Японии и США</h3>
+			<p class="healp">Помощь с подбором по телефону <span class="tel">8 800 200-55-15</span></p>			
+			<a class="btn_footer" href="#">Заказать обратный звонок</a>
+		</div>
+	</div>
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
+	<script src="libs/scrollto/jquery.scrollTo.min.js"></script>
+	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+	<script src="libs/countdown/jquery.plugin.js"></script>
+	<script src="libs/countdown/jquery.countdown.min.js"></script>
+	<script src="libs/countdown/jquery.countdown-ru.js"></script>
+	<script src="libs/landing-nav/navigation.js"></script>
+	<script src="js/jquery.fs.selecter.min.js"></script>
+	<!--<script src="libs/multiple-select-master/multiple-select.js"></script>-->
+	<script src="libs/select2-master/dist/js/select2.js"></script>
+	<script src="libs/liMenuVert/js/jquery.liMenuVert.js"></script>
+	<script src="libs/jquery.scrollbar-master/jquery.scrollbar.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/common.js"></script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

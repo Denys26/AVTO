@@ -1,0 +1,276 @@
+@import url(reset.css);
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table; 
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+body {
+	font-family: "OpenSansRegular", sans-serif;
+	font-size: 16px;
+}
+
+html, body {
+	height: 100%;
+}
+
+.header {
+	background: #0096dc;
+	min-height: 60px;
+	color: #fff;
+	font-size: 18px;
+
+}
+
+.wrapper {
+	width: 300px;
+	margin: 0 auto;
+}
+/*Mobile-menu*/
+.inner_header {
+  position: relative;
+  height: 55px;
+}
+
+.nav {
+  width: 100%;
+  box-shadow: inset 0 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  display: none;
+}
+.nav__item {
+  padding-left: 10px;	
+  display: block;
+  height: 50px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 50px;
+  text-transform: none;
+  text-decoration: none;
+  background-color: #0096dc;
+  /*transition: background-color 0.1s linear, color 0.1s linear;*/
+}
+.nav__item:not(:first-of-type) {
+  /*border-top: 1px solid rgba(255, 255, 255, 0.2);*/
+}
+.nav__item:not(:last-of-type) {
+  /*border-bottom: 1px solid rgba(0, 0, 0, 0.2);*/
+}
+.nav__item:last-of-type {
+  /*box-shadow: inset 0 -5px 10px -5px rgba(0, 0, 0, 0.4);*/
+}
+.nav__item:hover {
+  background-color: #4db6e7;
+}
+.nav__item:active {
+  background-color: #2768c1;
+  color: #fff;
+}
+.nav-burger {
+  display: block;
+  width: 20px;
+  height: 18px;
+  cursor: pointer;
+  color: transparent;
+  font-size: 0;
+  background: url("../img/icon-menu.png") no-repeat;
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  z-index: 1;
+}
+.nav-burger__checkbox {
+  display: none;
+}
+.nav-burger__checkbox:checked + .nav-burger {
+  background-image: url("../img/cross.png");
+}
+.nav-burger__checkbox:checked ~ .nav {
+  display: block;
+}
+
+/*end mobile-menu*/
+
+
+.fa {
+	position: absolute;
+    top: 18px;
+    right: 10px;
+    font-size: 22px;
+}
+
+.header> .wrapper {
+    background: #0096dc;
+    padding-top: 5px;
+    width: 320px;
+}
+
+.logo {
+    width: 107px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+h2 {
+	font-size: 18px;
+	color: #333333;
+	text-transform: uppercase;
+	margin: 23px 0 15px 0;
+	padding: 0;
+	text-align: center;
+}
+
+.menu {
+	margin: 0;
+	padding: 0;
+}
+
+.menu li {
+	list-style-type: none;
+	float: left;
+	border: 1px solid #d3d9dd;
+	padding: 10px;
+	font-size: 14px;
+	color: #939daa;
+}
+
+.menu li:first-child {
+	border:none;
+	background: #939daa;
+	color: #fff;
+	padding: 11px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.menu li:nth-child(2) {
+	border-left: none;
+	border-right: none;
+}
+
+.menu li:nth-child(3) {
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+#searchform {
+
+}
+
+.content_form_title {
+	font-family: "OpenSansSemiBold", sans-serif;
+	font-size: 14px;
+	margin-top: 24px;
+	margin-bottom: 14px;
+	display: block;
+}
+
+.content_selrct_producer {
+	width: 300px;
+}
+
+.btn {
+	width: 100%;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	padding: 15px 0px;
+	border-radius: 3px;
+	background: #0096dc;
+	border: none;
+	color: #f4f9fd;
+	text-transform: uppercase;
+}
+
+.footer {
+	background: url(../img/footer_bg.png) no-repeat top center;
+	min-height: 232px;
+	margin: 0 auto;
+	padding: 36px 0px;
+}
+
+.footer_title {
+	color: #fff;
+	font-family: "OpenSansRegular", sans-serif;
+	text-align: left;
+	font-size: 18px;
+	margin-bottom: 29px;
+
+}
+
+.healp {
+	font-family: "OpenSansRegular", sans-serif;
+	color: #fff;
+	font-size: 15px;
+}
+
+.tel {
+	display: block;
+	margin: 16px 0px;
+	font-size: 18px;
+}
+
+.btn_footer {
+	color: #fff;
+	background: #0096dc;
+	padding: 3px 10px;
+	font-size: 14px;
+	border-radius: 3px;
+}
+
+.niceCheck {
+width: 17px;
+height: 17px;
+display: inline-block;
+cursor: pointer;
+background: url(paht-to/checkbox.png);
+}
+.niceCheck input {
+display: none;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+	color: #000000;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+	border: none;
+	margin-top: 7px;
+	background-color: #fff;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+	display: none;
+}
